@@ -1,0 +1,245 @@
+<<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Goblin Product Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url(img/fondo.jpeg);
+      background-size: 2000px;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .card {
+      width: 350px;
+      background-color: white;
+      border-radius: 20px;
+      overflow: visible;
+      box-shadow: 0 10px 9px rgba(0, 0, 0, 0.589);
+      position: relative;
+    }
+
+    .image-container {
+
+      position: relative;
+      height: 270px;
+      background-image: url(img/goblin-bg.jpeg);
+      background-size: 370px;
+      overflow: visible;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .image-container img {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120%;
+      height: auto;
+      z-index: 5;
+      object-fit: contain;
+
+    }
+
+    .back-button {
+      position: absolute;
+      top: 230px;
+      left: -60px;
+      background-color: rgba(255, 255, 255, 0.644);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: transparent rgb(255, 255, 255);
+      text-decoration: none;
+      z-index: 10;
+      font-size: 1.2em;
+    }
+
+    .go-button {
+      position: absolute;
+      top: 230px;
+      left: 380px;
+      background-color: rgba(255, 255, 255, 0.644);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: transparent rgb(255, 255, 255);
+      text-decoration: none;
+      z-index: 10;
+      font-size: 1.2em;
+      transform: rotate(180deg);
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .rating-number {
+      color: rgb(44, 204, 29);
+      font-size: 0.9em;
+      margin-bottom: -20px;
+
+    }
+
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .description {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 40px;
+      margin-top: -5;
+      text-align: center;
+    }
+
+    .cuadritos {
+
+      background-color: rgba(25, 172, 12, 0.842);
+      width: 350px;
+      height: 100px;
+      margin-left: -20px;
+      margin-bottom: -20px;
+      display: flex;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+
+    }
+
+    .item {
+
+      width: 120px;
+      height: 100px;
+      text-align: center;
+      border: 1px solid rgba(13, 112, 4, 0.151);
+
+
+    }
+
+    .item h1 {
+      margin-top: 15px;
+      color: white;
+    }
+
+    .item p {
+      margin-top: -20px;
+      color: white;
+    }
+
+    .item2 {
+
+      width: 120px;
+      height: 100px;
+      text-align: center;
+      border: 2px solid rgba(13, 112, 4, 0.151);
+
+
+    }
+
+    .item2 h1 {
+      margin-top: 15px;
+      color: white;
+    }
+
+    .item2 p {
+      margin-top: -20px;
+      color: white;
+    }
+
+
+
+    .item3 {
+
+      width: 120px;
+      height: 100px;
+      text-align: center;
+      border: 1px solid rgba(13, 112, 4, 0.151);
+
+    }
+
+    .item3 h1 {
+      margin-top: 15px;
+      color: white;
+    }
+
+    .item3 p {
+      margin-top: -20px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="image-container">
+      <a href="#" class="back-button" aria-label="Regresar">&lt;</a>
+      <a href="#" class="go-button" aria-label="">&lt;</a>
+      <img src="img/goblin.png" alt="Mario Kart 8 Game Cover" />
+    </div>
+    <div class="content">
+      <div class="rating">
+        <h2 class="rating-number">LEVEL 5</h2>
+
+      </div>
+      <div class="title-container">
+        <h2 class="title">The Goblin</h2>
+      </div>
+      <p class="description">
+        These pesky little creatures only have eyes <br>
+        for onr thing:LOOT! They are faster than <br>
+        a Spring Trap, and their hunger for <br>
+        resources is limitless.
+      </p>
+      <div class="cuadritos">
+        <div class="item">
+          <H1>30</H1>
+          <P>TRAINING</P>
+        </div>
+        <div class="item2">
+          <H1>32</H1>
+          <P>SPEED</P>
+        </div>
+        <div class="item3">
+          <H1>100</H1>
+          <P>COST</P>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
